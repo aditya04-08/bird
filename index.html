@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Fly 🐦</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header>
+      <h1>🐦 Bird Fly</h1>
+      <p>Fly high. Dodge the pipes. Beat your best!</p>
+    </header>
+
+    <section class="game-card">
+      <div class="top-bar">
+        <span>SCORE <strong id="score">0</strong></span>
+        <span>BEST <strong id="best">0</strong></span>
+      </div>
+
+      <div id="game-area" aria-label="Bird Fly game">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+        <div id="start-screen" class="overlay">
+          <div class="message">
+            <div class="big-bird">🐤</div>
+            <h2>Ready to Fly?</h2>
+            <p>Tap, click, or press SPACE to flap!</p>
+            <button id="start-btn">Start Game ✨</button>
+          </div>
+        </div>
+
+        <div id="game-over" class="overlay hidden">
+          <div class="message">
+            <div class="big-bird">🐦</div>
+            <h2>Game Over!</h2>
+            <p>Your score: <strong id="final-score">0</strong></p>
+            <p id="result-message">Give it another try!</p>
+            <button id="restart-btn">Play Again ↻</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <span>🖱️ Click</span>
+        <span>⌨️ Spacebar</span>
+        <span>📱 Tap</span>
+      </div>
+    </section>
+
+    <footer>Made with 💛 and JavaScript</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
